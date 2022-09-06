@@ -40,7 +40,9 @@
 
 ### Executing the Program
 - To scrape the data from websites, run all the files that have scrape in them so that Profession, State, City, State_Salary_Deviation is fetched.
-- After we 
+- After we fetched this data and cleaned, tranformed it we will write this into different folder that will have different CSV files.
+- After haviing these CSV files based on our model we will create Dimensions and Facts and write to another CSV.
+- Will get this CSV file and start to visualize this data in Power BI.
 
 ---
 
