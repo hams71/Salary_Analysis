@@ -21,6 +21,11 @@
 ---
 
 ### Table of Contents
+- [Folder Structure](folder-strucuture)
+- [Executing the Program](executing-the-program)
+- [Fetching Data]
+- [Modeling]
+- [Taking It To The Next Step]
 
 
 ---
