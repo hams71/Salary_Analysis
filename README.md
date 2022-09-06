@@ -21,20 +21,12 @@
 ---
 
 ### Table of Contents
-- [Folder Structure](#folder-structure)
-- [Executing the Program](#executing-the-program)
-- [Task_1](#task_1)
-- [Task_2](#task_2)
+
 
 ---
 
 
 ### Folder Structure
-- python_file
-  - main.py     -> Python file to generate the JSON data
-  - data        -> Inside this folder, more folders for JSON, CSV, parquet data to be stored in. 
-- Task_1.ipynb  -> This task reads the JSON data does some transformation and writes data in CSV to another folder
-- Task_2.ipynb  -> This task reads the CSV data does some transformation and writes data in Parquet to another folder
 
 ---
 
@@ -43,29 +35,5 @@
 - After we fetched this data and cleaned, tranformed it we will write this into different folder that will have different CSV files.
 - After haviing these CSV files based on our model we will create Dimensions and Facts and write to another CSV.
 - Will get this CSV file and start to visualize this data in Power BI.
-
----
-
-### Task_1
-- We use Spark Streaming to read the data from JSON folder and do some tranformation from nested to flat.
-- Analytics
-  - Clicks
-  - Impressions
-- Sales
-  - Quantity
-  - Total_Price
-- Datetime
-- Provide a schema and change the datatypes of the columns
-- Write that data in CSV to a CSV folder.
-
----
-
-### Task_2
-
-- We use read the data from CSV folder and do some aggregation based on a window with watermark defined
-- Use the ForeachBatch to write the data in an append mode
-
-- Reason to use foreachBatch was that when we define the WaterMark of certain time that has to complete before it can write that to the folder
-- Lets say we defined a **Window** of 10 seconds and **Watermark** of 30 seconds. The output for this 10 second window will be displayed after 30 seconds when the watermark has passed. 
 
 ---
