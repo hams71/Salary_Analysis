@@ -6,12 +6,12 @@
 
 ---
 
-- The purpose of doing this was to learn abit about scraping data, modeling data, visualizing this data in Power BI.
-- Fetched data from different sites of German Salaries based on Profession and the State that they live in.
-- Also fetched the data of cities, states and the deviation of salaries based on the states.
-- After fetching this data, writing this data into different folders in CSV format.
-- After writing this data we do some cleaning, transformations and writing that in a so that it can be consumed.
-- Profession, State, State_Deviation, City are the tables and then based on these created a Salary_Fact_Table
+- The purpose of doing this was to learn a bit about scraping data, modeling data, visualizing this data in Power BI.
+- Fetched data from different sites of German Salaries based on Profession and the State.
+- Also fetched the data of Cities, States and the Deviation of Salaries based on the States.
+- After fetching this data, writing this data in CSV format.
+- After writing this data we do some cleaning, transformations and then write that into respective folder so that it can be consumed.
+- Profession, State, City are the tables and then based on these created a Salary_Fact_Table
 
 
 ---
@@ -50,9 +50,9 @@
   - State (Folder)
   - State_Salary_Deviation (Folder)
 
-- The ones starting with **Fetch** will get data from sites and write in a csv file
+- The ones starting with **Fetch** will get data from sites and write in a csv file.
 - The ones with **Spark** will read the csv, tranform the data and write to respective folder.
-- The folder will be created after you have executed the Spark code.
+- The folders will be created after you have executed the Spark code.
 
 ---
 
@@ -115,5 +115,6 @@
 
 - Used this model in visualization, mostly the data was denormalized it depends on the user how they want to create this data model, either in 3NF and having Surrogate keys and based on that or have a bit denormalized data if your data is not changing much.
 - We could have created an ETL pipeline, if we had changing data, or some api that could have provided us with salary based on different factors e.g. Inflation, cost of living etc. But as the this data does not change much so one time csv files would work in this case.
-- We are storing this data in csv we would have more tables for more details and based on that also provide some insigths.
+- We could get yearly data e.g. from the 2010 onwards and based on that get data till date. Will need to create an ETL pipeline and pull data, transform and load in files. The data models will also require some changes some will have to implement SCD, now based on our required it can be different and now having the historical and latest data we can get more insights.
+
 
