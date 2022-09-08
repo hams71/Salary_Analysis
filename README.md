@@ -1,10 +1,22 @@
 # Salary Analysis
 
 
+---
+
+### Table of Contents
+- [Overview](#overview)
+- [Program Flow](#program-flow)
+- [Folder Structure](#folder-structure)
+- [Program Execution](#program-execution)
+- [Data Modeling](#data-modeling)
+- [Tools](#tools)
+- [Level Up](#level-up)
+
+
+---
 
 ### Overview
 
----
 
 - The purpose of doing this was to learn a bit about scraping data, modeling data, visualizing this data in Power BI.
 - Fetched data from different sites of German Salaries based on Profession and the State.
@@ -12,17 +24,6 @@
 - After fetching this data, writing this data in CSV format.
 - After writing this data we do some cleaning, transformations and then write that into respective folder so that it can be consumed.
 - Profession, State, City are the tables and then based on these created a Salary_Fact_Table
-
-
----
-
-### Table of Contents
-- [Program Flow](#program-flow)
-- [Folder Structure](#folder-structure)
-- [Program Execution](#program-execution)
-- [Data Modeling](#data-modeling)
-- [Tools](#tools)
-- [Level Up](#level-up)
 
 
 ---
@@ -71,7 +72,7 @@
 ```bash
   ipython Fetch_State.ipynb
 ```
-- After we fetched this data and cleaned, tranformed it using Spark we will write this into different folder that will have different CSV files.
+- After we fetched this data now we will cleaned, tranform it using Spark and write this to different folders.
 ```bash
   ipython Spark_City_State.ipynb
 ```
@@ -82,7 +83,7 @@
   ipython Spark_State_Deviation.ipynb
 ```
 
-- After having these CSV files based on our model we will create Dimensions and Facts and write to another CSV. Spark_Salary_Fact will read all file and write them to Fact Folder.
+- After having these CSV files based on our data model we will create Dimensions and Facts and write to another folder. Spark_Salary_Fact will read all file and write them to Fact Folder.
 ```bash
   ipython Spark_Salary_Fact.ipynb
 ```
@@ -130,6 +131,6 @@
 
 ### Level Up
 
-- Used this model in visualization, mostly the data was denormalized it depends on the user how they want to create this data model, either in 3NF and having Surrogate keys and based on that or have a bit denormalized data if your data is not changing much.
-- We could have created an ETL pipeline, if we had changing data, or some api that could have provided us with salary based on different factors e.g. Inflation, cost of living etc. But as the this data does not change much so one time csv files would work in this case.
+- Used this model in visualization, mostly the data was denormalized it depends on the user, how they want to create this data model, either in 3NF and having Surrogate keys based on that or have a bit denormalized data if your data is not changing much.
+- We could have created an ETL pipeline, if we had changing data, or some api that could have provided us with salary based on different factors e.g. Inflation, cost of living etc. But as this data does not change much so having csv files would work in this case.
 - We could get yearly data e.g. from the 2010 onwards and based on that get data till date. Will need to create an ETL pipeline and pull data, transform and load in files. The data models will also require some changes some will have to implement SCD, now based on our required it can be different and now having the historical and latest data we can get more insights.
