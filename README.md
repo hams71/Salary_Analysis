@@ -31,7 +31,7 @@
 ### Program Flow
 
 <p align="center">
-  <img src="Images/Salary_Diagram.jpg" width="850">
+  <img src="Images/Salary_Diagram.jpg" width="950">
 </p>
 
 ---
@@ -101,11 +101,12 @@
 - The above data model has 3 Dim and 1 Fact and using this Fact we create our visualiztion.
 - This data model is not much normalized it depends the use case and what sort of database or warehouse you are using.
 - Some warehouses take advantage of joining data, while others are not much performant.
+- We also are not using the Ids of different tables in our Fact Table as this data will not change but it is recommended to use Ids(Surogate Keys) as the are internal to the database or warehouse. 
 
 #### Another Model
 
 <p align="center">
-  <img src="Images/Another_Sal_Model.JPG" width="750" >
+  <img src="Images/Another_Sal_Model.JPG" width="780" >
 </p>
 
 -  In this model we are using the **Ids** of the Dim tables instead of the names which is a much better practice.
@@ -132,5 +133,5 @@
 ### Level Up
 
 - Used this model in visualization, mostly the data was denormalized it depends on the user, how they want to create this data model, either in 3NF and having Surrogate keys based on that or have a bit denormalized data if your data is not changing much.
-- We could have created an ETL pipeline, if we had changing data, or some api that could have provided us with salary based on different factors e.g. Inflation, cost of living etc. But as this data does not change much so having csv files would work in this case.
+- We could have created an ETL pipeline, if we had changing data, or some api that could have provided us with salary based on different factors e.g. inflation, cost of living etc. But as this data does not change much so having csv files would work in this case.
 - We could get yearly data e.g. from the 2010 onwards and based on that get data till date. Will need to create an ETL pipeline and pull data, transform and load in files. The data models will also require some changes some will have to implement SCD, now based on our required it can be different and now having the historical and latest data we can get more insights.
