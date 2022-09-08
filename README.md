@@ -21,6 +21,7 @@
 - [Folder Structure](#folder-structure)
 - [Program Execution](#program-execution)
 - [Data Modeling](#data-modeling)
+- [Tools](#tools)
 - [Level Up](#level-up)
 
 
@@ -111,10 +112,24 @@
 
 ---
 
-### Level
+### Level Up
 
 - Used this model in visualization, mostly the data was denormalized it depends on the user how they want to create this data model, either in 3NF and having Surrogate keys and based on that or have a bit denormalized data if your data is not changing much.
 - We could have created an ETL pipeline, if we had changing data, or some api that could have provided us with salary based on different factors e.g. Inflation, cost of living etc. But as the this data does not change much so one time csv files would work in this case.
 - We could get yearly data e.g. from the 2010 onwards and based on that get data till date. Will need to create an ETL pipeline and pull data, transform and load in files. The data models will also require some changes some will have to implement SCD, now based on our required it can be different and now having the historical and latest data we can get more insights.
 
+---
 
+### Tools
+
+- Python, Pyspark
+- VS Code
+- Power BI
+- Beautiful Soup
+```bash
+  pip install beautifulsoup4
+```
+- Requests
+```bash
+  pip install requests
+```
