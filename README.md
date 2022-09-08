@@ -94,7 +94,7 @@
 ### Data Modeling
 
 <p align="center">
-  <img src="Images/Sal_Model.png" >
+  <img src="Images/Sal_Model.PNG" width="750">
 </p>
 
 - The above data model has 3 Dim and 1 Fact and using this Fact we create our visualiztion.
@@ -103,7 +103,11 @@
 
 #### Another Model
 
+<p align="center">
+  <img src="Images/Another_Sal_Model.JPG" width="750" >
+</p>
 
-
+-  In this model we are using the **Ids** of the Dim tables instead of the names which is a much better practice.
+-  If we had more attributes of Dim table we could have moved to a more normalized model but for now denormalized it is.
 
 
