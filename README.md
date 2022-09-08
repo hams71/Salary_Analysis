@@ -1,4 +1,4 @@
-# Salary_Analysis
+# Salary Analysis
 
 
 
@@ -21,24 +21,89 @@
 ---
 
 ### Table of Contents
-- [Folder Structure](folder-strucuture)
-- [Executing the Program](executing-the-program)
-- [Fetching Data]
-- [Modeling]
-- [Taking It To The Next Step]
+- [Program Flow](#program-flow)
+- [Folder Structure](#folder-structure)
+- [Program Execution](#program-execution)
+- [Data Modeling](#data-modeling)
+- [Level Up](#level-up)
+
+
+---
+
+### Program Flow
 
 
 ---
 
 
 ### Folder Structure
+- Salary_Analysis
+  - Fetch_City_State.ipynb
+  - Fetch_Salary_By_Profession.ipynb
+  - Fetch_Salary_Deviation_By_State.ipynb
+  - Fetch_State.ipynb
+  - Spark_City_State.ipynb
+  - Spark_Profession.ipynb
+  - Spark_State_Deviation.ipynb
+  - Spark_Salary_Fact.ipynb
+  - Fact (Folder)
+  - Profession (Folder)
+  - State (Folder)
+  - State_Salary_Deviation (Folder)
+
+- The ones starting with **Fetch** will get data from sites and write in a csv file
+- The ones with **Spark** will read the csv, tranform the data and write to respective folder.
+- The folder will be created after you have executed the Spark code.
 
 ---
 
-### Executing the Program
-- To scrape the data from websites, run all the files that have scrape in them so that Profession, State, City, State_Salary_Deviation is fetched.
-- After we fetched this data and cleaned, tranformed it we will write this into different folder that will have different CSV files.
-- After haviing these CSV files based on our model we will create Dimensions and Facts and write to another CSV.
+### Program Execution
+- To scrape the data from websites, run all the files that have **Fetch** in them so that Profession, State, City, State_Salary_Deviation is fetched.
+```bash
+  ipython Fetch_City_State.ipynb
+```
+```bash
+  ipython Fetch_Salary_By_Profession.ipynb
+```
+```bash
+  ipython Fetch_Salary_Deviation_By_State.ipynb
+```
+```bash
+  ipython Fetch_State.ipynb
+```
+- After we fetched this data and cleaned, tranformed it using Spark we will write this into different folder that will have different CSV files.
+```bash
+  ipython Spark_City_State.ipynb
+```
+```bash
+  ipython Spark_Profession.ipynb
+```
+```bash
+  ipython Spark_State_Deviation.ipynb
+```
+
+- After having these CSV files based on our model we will create Dimensions and Facts and write to another CSV. Spark_Salary_Fact will read all file and write them to Fact Folder.
+```bash
+  ipython Spark_Salary_Fact.ipynb
+```
 - Will get this CSV file and start to visualize this data in Power BI.
 
 ---
+
+
+### Data Modeling
+
+<p align="center">
+  <img src="Images/Sal_Model.png" >
+</p>
+
+- The above data model has 3 Dim and 1 Fact and using this Fact we create our visualiztion.
+- This data model is not much normalized it depends the use case and what sort of database or warehouse you are using.
+- Some warehouses take advantage of joining data, while others are not much performant.
+
+#### Another Model
+
+
+
+
+
