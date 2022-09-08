@@ -13,11 +13,7 @@
 - After writing this data we do some cleaning, transformations and writing that in a so that it can be consumed.
 - Profession, State, State_Deviation, City are the tables and then based on these created a Salary_Fact_Table
 
-### Taking it to the next Step
 
-- Used this model in visualization, mostly the data was denormalized it depends on the user how they want to create this data model, either in 3NF and having Surrogate keys and based on that or have a bit denormalized data if your data is not changing much.
-- We could have created an ETL pipeline, if we had changing data, or some api that could have provided us with salary based on different factors e.g. Inflation, cost of living etc. But as the this data does not change much so one time csv files would work in this case.
-- We are storing this data in csv we would have more tables for more details and based on that also provide some insigths.
 ---
 
 ### Table of Contents
@@ -32,6 +28,9 @@
 
 ### Program Flow
 
+<p align="center">
+  <img src="Images/SalaryDiagram.jpg" width="750">
+</p>
 
 ---
 
@@ -110,4 +109,11 @@
 -  In this model we are using the **Ids** of the Dim tables instead of the names which is a much better practice.
 -  If we had more attributes of Dim table we could have moved to a more normalized model but for now denormalized it is.
 
+---
+
+### Level
+
+- Used this model in visualization, mostly the data was denormalized it depends on the user how they want to create this data model, either in 3NF and having Surrogate keys and based on that or have a bit denormalized data if your data is not changing much.
+- We could have created an ETL pipeline, if we had changing data, or some api that could have provided us with salary based on different factors e.g. Inflation, cost of living etc. But as the this data does not change much so one time csv files would work in this case.
+- We are storing this data in csv we would have more tables for more details and based on that also provide some insigths.
 
