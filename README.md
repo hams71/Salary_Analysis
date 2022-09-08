@@ -30,7 +30,7 @@
 ### Program Flow
 
 <p align="center">
-  <img src="Images/Salary_Diagram.jpg" width="750">
+  <img src="Images/Salary_Diagram.jpg" width="850">
 </p>
 
 ---
