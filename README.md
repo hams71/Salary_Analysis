@@ -22,7 +22,7 @@
 - Fetched data from different sites of German Salaries based on Profession and the State.
 - Also fetched the data of Cities, States and the Deviation of Salaries based on the States.
 - After fetching this data, writing this data in CSV format.
-- Transformated the data and write them into respective folder so that it can be consumed.
+- Transformated the data and writing them into respective folder so that it can be consumed.
 - Profession, State, City are the tables and then based on these created a Salary_Fact_Table.
 
 
@@ -31,7 +31,7 @@
 ### Program Flow
 
 <p align="center">
-  <img src="Images/Salary_Diagram.jpg" width="950">
+  <img src="Images/Salary_Diagram_2.jpg" width="950">
 </p>
 
 ---
