@@ -1,5 +1,6 @@
 # Salary Analysis
 
+Fetched salary related data from different sites and made a data model and visualized it using Power BI.
 
 ---
 
@@ -18,12 +19,12 @@
 ### Overview
 
 
-- The purpose of doing this was to learn a bit about scraping data, modeling data, visualizing this data in Power BI.
+- The purpose of doing this was to learn a bit about scraping data, modeling data, visualizing in Power BI.
 - Fetched data from different sites of German Salaries based on Profession and the State.
 - Also fetched the data of Cities, States and the Deviation of Salaries based on the States.
 - After fetching this data, writing this data in CSV format.
 - Transformated the data and writing them into respective folder so that it can be consumed.
-- Profession, State, City are the tables and then based on these created a Salary_Fact_Table.
+- **Profession, State, City** are the tables and then based on these created a **Salary_Fact_Table**.
 
 
 ---
